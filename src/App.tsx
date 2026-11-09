@@ -25,6 +25,7 @@ import {
   Globe,
   Tag,
 } from 'lucide-react';
+import avatarImg from './assets/images/avatar_data_engineer_1794232360862.jpg';
 import { PublishModal } from './components/PublishModal';
 import { exportPortfolioProjectZip } from './utils/zipExporter';
 
@@ -193,6 +194,7 @@ export default function App() {
   const readmeMarkdown = `# Hi, I'm ${profile.name} 👋
 ### ${profile.title} · Lakehouse & Data Pipelines
 
+[![Live Website](https://img.shields.io/badge/Live%20Website-inelsonv.github.io%2FPortafolio-6366F1?style=for-the-badge&logo=googlechrome&logoColor=white)](https://inelsonv.github.io/Portafolio/)
 [![Portfolio Repository](https://img.shields.io/badge/GitHub-inelsonv%2FPortafolio-2ea44f?style=for-the-badge&logo=github&logoColor=white)](${profile.repoUrl})
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-iventuram-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](${profile.linkedin})
 [![Email](https://img.shields.io/badge/Email-iventuramena%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:${profile.email})
@@ -425,7 +427,7 @@ export default function App() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
             <div className="relative shrink-0">
               <img
-                src="/src/assets/images/avatar_data_engineer_1794232360862.jpg"
+                src={avatarImg}
                 alt={profile.name}
                 referrerPolicy="no-referrer"
                 className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl object-cover border border-slate-200 dark:border-slate-700 shadow-xs"

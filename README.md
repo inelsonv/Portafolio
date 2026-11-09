@@ -1,6 +1,7 @@
 # Hi, I'm Nelson Ventura 👋
 ### Senior Data Engineer · Lakehouse & Real-Time Data Pipelines
 
+[![Live Website](https://img.shields.io/badge/Live%20Website-inelsonv.github.io%2FPortafolio-6366F1?style=for-the-badge&logo=googlechrome&logoColor=white)](https://inelsonv.github.io/Portafolio/)
 [![Portfolio Repository](https://img.shields.io/badge/GitHub-inelsonv%2FPortafolio-2ea44f?style=for-the-badge&logo=github&logoColor=white)](https://github.com/inelsonv/Portafolio)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-iventuram-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/iventuram/)
 [![Email](https://img.shields.io/badge/Email-iventuramena%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:iventuramena@gmail.com)
