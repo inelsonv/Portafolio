@@ -1,6 +1,0 @@
-{
-  "name": "DataForge - Data Engineer GitHub Repository Architect",
-  "description": "Architect, generate, test, and export production-grade Data Engineering GitHub repositories with modern data stacks, orchestration DAGs, dbt models, CI/CD, and architecture READMEs.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
