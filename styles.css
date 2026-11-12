@@ -82,9 +82,14 @@ main { padding-top: 64px; max-width: 680px; }
 .intro h2 { font-size: 29px; letter-spacing: -.8px; line-height: 1.3; margin: 0 0 18px; }
 .bio { color: var(--text); font-size: 14px; line-height: 1.8; margin: 0 0 13px; }
 .bio:last-child { margin-bottom: 0; }
-.news, .work, .experience, .contact { padding: 32px 0; border-bottom: 1px solid var(--line); }
+.technology, .news, .work, .experience, .contact { padding: 32px 0; border-bottom: 1px solid var(--line); }
 .section-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 15px; margin-bottom: 13px; }
 .section-heading h2 { font-size: 18px; letter-spacing: -.3px; margin: 0; font-weight: 700; }
+.tech-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 16px; }
+.tech-item { min-height: 48px; display: flex; align-items: center; gap: 10px; padding: 9px 10px; border: 1px solid #eaedef; border-radius: 4px; color: #656c72; }
+.tech-item span { font-size: 12px; line-height: 1.35; font-weight: 600; }
+.tech-icon { width: 23px; height: 23px; flex: 0 0 23px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.fabric-icon rect { fill: currentColor; stroke: none; }
 .news-item { display: grid; grid-template-columns: 53px 1fr; gap: 14px; padding: 9px 0; }
 .news-item time, .timeline-item time { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
 .news-item p { font-size: 13px; color: var(--text); margin: 0; }
@@ -139,6 +144,7 @@ footer span { color: #a0a4a8; }
   main { padding-top: 42px; }
   .intro h2 { font-size: 26px; }
   .language-switch { top: 10px; right: 15px; }
+  .tech-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 480px) {
   .work-item { grid-template-columns: 105px minmax(0, 1fr); gap: 14px; }

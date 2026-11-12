@@ -31,6 +31,18 @@
         <p class="bio">I currently work at Bellon SAS. You can find more about my background and experience on <a href="https://www.linkedin.com/in/iventuram/">LinkedIn</a>.</p>
       </section>
 
+      <section class="technology" id="technologies">
+        <div class="section-heading"><h2>Technologies</h2><span>DATA PLATFORMS &amp; TOOLS</span></div>
+        <div class="tech-grid">
+          <div class="tech-item"><svg class="tech-icon fabric-icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="3" width="11" height="11" rx="2"/><rect x="18" y="3" width="11" height="11" rx="2"/><rect x="3" y="18" width="11" height="11" rx="2"/><rect x="18" y="18" width="11" height="11" rx="2"/></svg><span>Microsoft Fabric</span></div>
+          <div class="tech-item"><svg class="tech-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M8 23h16a5 5 0 0 0 .3-10A8.5 8.5 0 0 0 8 12a5.5 5.5 0 0 0 0 11Z"/><path d="M8 25c5 4 12 4 17 0"/></svg><span>AWS</span></div>
+          <div class="tech-item"><svg class="tech-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 27h23"/><rect x="7" y="17" width="4" height="9" rx="1"/><rect x="14" y="11" width="4" height="15" rx="1"/><rect x="21" y="5" width="4" height="21" rx="1"/></svg><span>Power BI</span></div>
+          <div class="tech-item"><svg class="tech-icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="5" width="15" height="19" rx="2"/><path d="M10 5v19M15 5v19M5 11h15M5 17h15M20 15h7m-3-3 3 3-3 3"/></svg><span>Power Query</span></div>
+          <div class="tech-item"><svg class="tech-icon" viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="7" rx="10" ry="4"/><path d="M6 7v17c0 2.2 4.5 4 10 4s10-1.8 10-4V7M6 15c0 2.2 4.5 4 10 4s10-1.8 10-4M6 23c0 2.2 4.5 4 10 4s10-1.8 10-4"/></svg><span>SQL Server</span></div>
+          <div class="tech-item"><svg class="tech-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="m11 8-8 8 8 8M21 8l8 8-8 8M18 5l-4 22"/></svg><span>Python / R</span></div>
+        </div>
+      </section>
+
       <section class="news" id="certifications">
         <div class="section-heading"><h2>Certifications</h2><span>PROFESSIONAL DEVELOPMENT</span></div>
         <article class="news-item"><time>2026</time><p><strong>Claude 101</strong> and <strong>Introduction to Model Context Protocol</strong> · Anthropic</p></article>
@@ -69,6 +81,7 @@
         cv: "Download CV", cvNote: "English PDF CV", eyebrow: "PROFESSIONAL PROFILE", greeting: "Hi, I'm Inelson.",
         bio1: "I am a Systems and Computing Engineer and Data Engineer based in Santiago de los Caballeros, Dominican Republic. My professional development includes data science, business intelligence, SQL Server, and generative AI.",
         bio2: 'I currently work at Bellon SAS. You can find more about my background and experience on <a href="https://www.linkedin.com/in/iventuram/">LinkedIn</a>.',
+        technologies: "Technologies", techCategory: "DATA PLATFORMS &amp; TOOLS",
         certifications: "Certifications", development: "PROFESSIONAL DEVELOPMENT",
         cert1: "<strong>Claude 101</strong> and <strong>Introduction to Model Context Protocol</strong> · Anthropic",
         cert2: "<strong>Generative AI</strong> · Data Science Research Perú",
@@ -85,6 +98,7 @@
         cv: "Descargar CV", cvNote: "CV en PDF (inglés)", eyebrow: "PERFIL PROFESIONAL", greeting: "Hola, soy Inelson.",
         bio1: "Soy ingeniero en Sistemas y Computación y Data Engineer, radicado en Santiago de los Caballeros, República Dominicana. Mi desarrollo profesional incluye ciencia de datos, inteligencia de negocios, SQL Server e inteligencia artificial generativa.",
         bio2: 'Actualmente trabajo en Bellon SAS. Puedes conocer más sobre mi trayectoria y experiencia en <a href="https://www.linkedin.com/in/iventuram/">LinkedIn</a>.',
+        technologies: "Tecnologías", techCategory: "PLATAFORMAS Y HERRAMIENTAS DE DATOS",
         certifications: "Certificaciones", development: "DESARROLLO PROFESIONAL",
         cert1: "<strong>Claude 101</strong> e <strong>Introducción al Model Context Protocol</strong> · Anthropic",
         cert2: "<strong>Inteligencia Artificial Generativa</strong> · Data Science Research Perú",
@@ -98,7 +112,7 @@
     };
     const fields = {
       role: ".role", cv: ".cv-label", cvNote: ".cv-note", eyebrow: ".eyebrow", greeting: ".intro h2",
-      bio1: ".intro .bio:nth-of-type(2)", bio2: ".bio:last-of-type", certifications: "#certifications h2", development: "#certifications .section-heading span",
+      bio1: ".intro .bio:nth-of-type(2)", bio2: ".bio:last-of-type", technologies: "#technologies h2", techCategory: "#technologies .section-heading span", certifications: "#certifications h2", development: "#certifications .section-heading span",
       cert1: ".news-item:nth-of-type(1) p", cert2: ".news-item:nth-of-type(2) p", cert3: ".news-item:nth-of-type(3) p", cert4: ".news-item:nth-of-type(4) p", cert5: ".news-item:nth-of-type(5) p",
       languages: "#languages h2", communication: "#languages .section-heading span", spanish: "#languages .news-item:nth-of-type(1) p", english: "#languages .news-item:nth-of-type(2) p",
       experience: "#experience h2", background: "#experience .section-heading span", current: ".timeline-item:nth-of-type(1) time", education: ".timeline-item:nth-of-type(2) time", roleTitle: ".timeline-item:nth-of-type(1) h3", degree: ".timeline-item:nth-of-type(2) h3", employer: ".timeline-item:nth-of-type(1) p", school: ".timeline-item:nth-of-type(2) p",
