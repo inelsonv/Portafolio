@@ -89,7 +89,7 @@ main { padding-top: 64px; max-width: 680px; }
 .tech-item { min-height: 48px; display: flex; align-items: center; gap: 10px; padding: 9px 10px; border: 1px solid #eaedef; border-radius: 4px; color: #656c72; }
 .tech-item span { font-size: 12px; line-height: 1.35; font-weight: 600; }
 .tech-icon { width: 23px; height: 23px; flex: 0 0 23px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-.fabric-brand { object-fit: contain; filter: grayscale(1); opacity: .78; }
+.fabric-brand, .aws-brand { object-fit: contain; filter: grayscale(1); opacity: .78; }
 .news-item { display: grid; grid-template-columns: 53px 1fr; gap: 14px; padding: 9px 0; }
 .news-item time, .timeline-item time { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
 .news-item p { font-size: 13px; color: var(--text); margin: 0; }
