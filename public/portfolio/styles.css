@@ -1,0 +1,149 @@
+:root {
+  --ink: #282a2d;
+  --text: #52565b;
+  --muted: #85898e;
+  --line: #e6e8ea;
+  --link: #286d9b;
+  --sans: Arial, Helvetica, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: #fff;
+  color: var(--ink);
+  font: 15px/1.68 var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.page {
+  width: min(1040px, calc(100% - 64px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 245px minmax(0, 1fr);
+  gap: 88px;
+}
+.profile {
+  align-self: start;
+  position: sticky;
+  top: 40px;
+  padding-top: 64px;
+  min-height: 100vh;
+}
+.portrait {
+  width: 174px;
+  height: 174px;
+  border-radius: 50%;
+  background: #e9edef;
+  display: grid;
+  place-items: center;
+  margin: 0 0 23px;
+  color: #747d83;
+}
+.portrait span { font-size: 36px; font-weight: 600; letter-spacing: -3px; }
+.profile h1 { font-size: 22px; line-height: 1.3; letter-spacing: -.5px; margin: 0; font-weight: 700; }
+.role { color: var(--text); margin: 7px 0 0; font-size: 14px; }
+.location { font-size: 13px; color: var(--muted); margin: 2px 0 0; }
+.location, .email-link, .cv-link { display: flex; align-items: center; gap: 8px; }
+.profile-icon { width: 16px; height: 16px; flex: 0 0 16px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.profile-rule { width: 100%; border-top: 1px solid var(--line); margin: 22px 0 12px; }
+.profile-link { display: block; font-size: 13px; padding: 4px 0; }
+.profile-link span { font-size: 11px; color: var(--muted); }
+.cv-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid #d6dade;
+  border-radius: 4px;
+  padding: 7px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: var(--ink);
+}
+.cv-link:hover { text-decoration: none; background: #f6f7f7; }
+.cv-link span { font-size: 15px; }
+.cv-link .cv-label { font-size: 12px; }
+.cv-note { font-size: 11px; line-height: 1.5; color: var(--muted); margin-top: 8px; }
+.cv-note code { font-size: 10px; }
+
+main { padding-top: 64px; max-width: 680px; }
+.intro { padding-bottom: 38px; border-bottom: 1px solid var(--line); }
+.eyebrow, .section-heading > span {
+  font-size: 10px;
+  letter-spacing: .1em;
+  color: var(--muted);
+  font-weight: 600;
+}
+.eyebrow { margin: 0 0 7px; }
+.intro h2 { font-size: 29px; letter-spacing: -.8px; line-height: 1.3; margin: 0 0 18px; }
+.bio { color: var(--text); font-size: 14px; line-height: 1.8; margin: 0 0 13px; }
+.bio:last-child { margin-bottom: 0; }
+.news, .work, .experience, .contact { padding: 32px 0; border-bottom: 1px solid var(--line); }
+.section-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 15px; margin-bottom: 13px; }
+.section-heading h2 { font-size: 18px; letter-spacing: -.3px; margin: 0; font-weight: 700; }
+.news-item { display: grid; grid-template-columns: 53px 1fr; gap: 14px; padding: 9px 0; }
+.news-item time, .timeline-item time { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.news-item p { font-size: 13px; color: var(--text); margin: 0; }
+.work-item { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: 20px; padding: 14px 0 18px; }
+.work-image { height: 122px; display: grid; place-items: center; background: #edf0f2; border: 1px solid #e8eaec; color: #879099; }
+.work-image span { font-size: 27px; font-weight: 600; letter-spacing: -1px; }
+.image-two { background: #f2eeea; color: #9c8b7d; }
+.work-copy h3, .timeline-item h3 { font-size: 14px; line-height: 1.45; margin: 0; font-weight: 700; }
+.work-meta { font-size: 11px !important; color: var(--muted) !important; margin: 2px 0 6px !important; }
+.work-copy p { font-size: 12px; color: var(--text); line-height: 1.65; margin: 0 0 5px; }
+.work-copy > a { font-size: 12px; }
+.work-copy > a span { font-size: 11px; }
+.timeline-item { display: grid; grid-template-columns: 125px 1fr; gap: 20px; padding: 10px 0; }
+.timeline-item p { font-size: 13px; color: var(--text); margin: 2px 0 0; }
+.contact > p { font-size: 13px; color: var(--text); margin: 0 0 9px; }
+.contact-email { font-size: 14px; }
+.contact-email span { font-size: 12px; }
+footer { display: flex; justify-content: space-between; padding: 20px 0 35px; color: var(--muted); font-size: 11px; }
+footer span { color: #a0a4a8; }
+
+.language-switch {
+  position: fixed;
+  top: 17px;
+  right: max(24px, calc((100vw - 1040px) / 2));
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 9px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.language-switch button { border: 0; background: transparent; padding: 2px; color: var(--muted); font: 600 11px var(--sans); cursor: pointer; }
+.language-switch button[aria-pressed="true"] { color: var(--ink); }
+.language-switch button:hover { color: var(--link); }
+
+@media (max-width: 760px) {
+  .page { width: min(620px, calc(100% - 40px)); grid-template-columns: 1fr; gap: 0; }
+  .profile { position: static; min-height: auto; padding-top: 30px; display: grid; grid-template-columns: 82px 1fr; column-gap: 18px; align-items: center; }
+  .portrait { width: 82px; height: 82px; margin: 0; grid-row: span 3; }
+  .portrait span { font-size: 24px; }
+  .profile h1 { font-size: 20px; align-self: end; }
+  .role { font-size: 13px; align-self: center; }
+  .location { align-self: start; }
+  .profile-rule { grid-column: 1 / -1; margin: 18px 0 8px; }
+  .profile-link { display: inline-block; margin-right: 14px; font-size: 12px; }
+  .cv-link { grid-column: 1 / -1; justify-self: start; margin-top: 13px; }
+  .cv-note { grid-column: 1 / -1; margin: 5px 0 0; }
+  main { padding-top: 42px; }
+  .intro h2 { font-size: 26px; }
+  .language-switch { top: 10px; right: 15px; }
+}
+@media (max-width: 480px) {
+  .work-item { grid-template-columns: 105px minmax(0, 1fr); gap: 14px; }
+  .work-image { height: 105px; }
+  .timeline-item { grid-template-columns: 95px 1fr; gap: 10px; }
+  .section-heading > span { font-size: 9px; }
+  .bio { font-size: 13px; }
+}
